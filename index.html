@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel-'stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+<title>More Buttons!</title>
+<style>
+button {width: 50px !important; height: 50px !important}
+</style>
+</head>
+<body>
+<div class=container>
+<div class=row style='width: 700px !important'>
+<button class='btn btn-secondary'><i class='fa fa-gift fa-lg'></i></button>
+<button class='btn btn-secondary'><i class='fa fa-smile-o fa-lg'></i></button>
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-secondary">
+    <i class='fa fa-paperclip fa-lg'></i>
+  </button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <!--<span class="sr-only">Toggle Dropdown</span>-->
+  </button>
+  <div class="dropdown-menu">
+    <button class='btn btn-secondary'><i class='fa fa-image fa-lg'></i>Image</button>
+    <button class='btn btn-secondary'><i class='fa fa-image fa-lg fa-spin'></i>GIF</button>
+    <button class='btn btn-secondary'><i class='fa fa-video fa-lg'></i>Video</button>
+  </div>
+</div>
+<button class='btn btn-secondary'><i class='fa fa-square-o fa-lg'>/</i></button>
+<input type=text placeholder='Type a message...' />
+<button class='btn btn-secondary'><i class='fa fa-send fa-lg'></i></button>
