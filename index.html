@@ -1,31 +1,345 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel-'stylesheet'>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-<title>More Buttons!</title>
-<style>
-button {width: 25px !important; height: 25px !important}
-</style>
-</head>
-<body>
-<div class=container>
-<div class=row style='width: 700px !important'>
-<button class='btn btn-secondary'><i class='fa fa-gift'></i></button>
-<button class='btn btn-secondary'><i class='fa fa-smile-o'></i></button>
-<div class="btn-group dropup">
-  <button type="button" class="btn btn-secondary">
-    <i class='fa fa-paperclip'></i>
-  </button>
-  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <!--<span class="sr-only">Toggle Dropdown</span>-->
-  </button>
-  <div class="dropdown-menu">
-    <button class='btn btn-secondary'><i class='fa fa-image'></i>Image</button>
-    <button class='btn btn-secondary'><i class='fa fa-image fa-spin'></i>GIF</button>
-    <button class='btn btn-secondary'><i class='fa fa-video'></i>Video</button>
-  </div>
-</div>
-<button class='btn btn-secondary'><i class='fa fa-square-o'>/</i></button>
-<input type=text placeholder='Type a message...' />
-<button class='btn btn-secondary'><i class='fa fa-send'></i></button>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
+    <title>More Buttons!</title>
+    <style>
+      button {
+        width: 50px !important;
+        height: 50px !important;
+        text-align: center;
+      }
+      /* .dropdown-toggle.active-dropdown::after {
+        transform: rotate(-90deg);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <!-- <button class='btn btn-dark'><i class='fa fa-gift'></i></button>
+    <button class='btn btn-dark'><i class='fa fa-smile-o'></i></button>
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-dark">
+        <i class='fa fa-paperclip'></i>
+      </button>
+      <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <button class='btn btn-dark'><i class='fa fa-image'></i>Image</button>
+        <button class='btn btn-dark'><i class='fa fa-image fa-spin'></i>GIF</button>
+        <button class='btn btn-dark'><i class='fa fa-video'></i>Video</button>
+      </div>
+    </div>
+    <button class='btn btn-dark'><i class='fa fa-square-o'>/</i></button>
+    <input type=text placeholder='Type a message...' class='' />
+    <button class='btn btn-dark'><i class='fa fa-send'></i></button> -->
+      <form>
+        <div class="form-row float-left clearfix">
+          <div class="col-11">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Write a message..."
+            />
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn btn-light">
+              <i class="fa fa-send"></i>
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">
+              <i class="fa fa-gift"></i>
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">
+              <i class="fa fa-smile-o"></i>
+            </button>
+          </div>
+          <!-- <div class="col">
+            <button type="button" class="btn btn-light">
+              <i class='fa fa-paperclip'></i>
+            </button>
+          </div> -->
+          <div class="btn-group dropdown">
+            <button type="button" class="btn btn-light">
+              <i class="fa fa-paperclip"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-light dropdown-toggle dropdown-toggle-split"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- <span class="sr-only">Toggle Dropdown</span> -->
+            </button>
+            <div class="dropdown-menu">
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-image"></i></button
+                >Static image
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-image fa-pulse"></i></button
+                >GIF
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-video"></i></button
+                >Record video...
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-microphone"></i></button
+                >Record audio...
+              </div>
+            </div>
+          </div>
+          <div class="btn-group dropdown">
+            <button
+              type="button"
+              class="btn btn-light dropdown-toggle dropdown-toggle-split"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- <span class="sr-only">Toggle Dropdown</span> -->
+              <i class="fa fa-font"></i>
+            </button>
+            <div class="dropdown-menu">
+              <div>
+                <button class="btn btn-light"><i class="fa fa-bold"></i></button
+                ><strong>Bold</strong>
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-italic"></i></button
+                ><em>Italics</em>
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-underline"></i></button
+                ><ins>Underline</ins>
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-strikethrough"></i></button
+                ><del>Strikethrough</del>
+              </div>
+              <div>
+                <button class="btn btn-light"><i class="fa fa-code"></i></button
+                ><code>Monospace</code>
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-quote-left"></i></button
+                ><em>Quote</em>
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-list-ol"></i></button
+                >1. Ordered
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-list-ul"></i></button
+                >&middot; Unordered
+              </div>
+              <div>
+                <button class="btn btn-light">
+                  <i class="fa fa-chain"></i></button
+                ><a href='#'>Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">
+              <!-- <i class="fa">/</i> -->
+              /
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">
+              <!-- <i class="fa">@</i> -->
+              @
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">
+              <!-- <i class="fa">#</i> -->
+              #
+            </button>
+          </div>
+          <div class="col">
+            <!-- <button type="button" class="btn btn-light">
+              .!-
+            </button> -->
+            
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-light"
+              data-toggle="modal"
+              data-target="#customCommands"
+            >
+              ,!-
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="customCommands"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">
+                      Custom Commands
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                    >
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    This server's bots which support custom commands are:
+                    <!-- Insert bots -->
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">MEE6</h5>
+                        <p class="card-text">
+                          Prefix: <code>!</code>
+                          Quick commands:
+                          <ul class="list-unstyled">
+                            <li>
+                              <a href='#'>!youtube &lt;search&gt;</a><br>
+                              Search in YouTube
+                            </li>
+                            <li>
+                              <a href="#">!start-quiz</a><br>
+                              Start a music quiz
+                            </li>
+                            <li>
+                              <a href="#">!record</a><br>
+                              Record your voice in a MP3 file
+                            </li>
+                            <li>
+                              <a href="#">!rank</a><br>
+                              See your rank
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">YAGPDB</h5>
+                        <p class="card-text">
+                          Prefix: <code>-</code>
+                          Quick commands:
+                          <ul class="list-unstyled">
+                            <li>
+                              <a href='#'>-ticket open &lt;reason&gt;</a><br>
+                              Open a ticket
+                            </li>
+                            <li>
+                              <a href="#">!start-quiz</a><br>
+                              Start a music quiz
+                            </li>
+                            <li>
+                              <a href="#">-help</a><br>
+                              See help
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
+      /*!
+       * Bootstrap 4 multi dropdown navbar ( https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-navbar/ )
+       * Copyright 2017.
+       * Licensed under the GPL license
+       */
+
+      $(document).ready(function () {
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+          var $el = $(this);
+          $el.toggleClass("active-dropdown");
+          var $parent = $(this).offsetParent(".dropdown-menu");
+          if (!$(this).next().hasClass("show")) {
+            $(this)
+              .parents(".dropdown-menu")
+              .first()
+              .find(".show")
+              .removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass("show");
+
+          $(this).parent("li").toggleClass("show");
+
+          $(this)
+            .parents("li.nav-item.dropdown.show")
+            .on("hidden.bs.dropdown", function (e) {
+              $(".dropdown-menu .show").removeClass("show");
+              $el.removeClass("active-dropdown");
+            });
+
+          if (!$parent.parent().hasClass("navbar-nav")) {
+            $el
+              .next()
+              .css({ top: $el[0].offsetTop, left: $parent.outerWidth() - 4 });
+          }
+
+          return false;
+        });
+      });
+    </script> -->
+  </body>
+</html>
