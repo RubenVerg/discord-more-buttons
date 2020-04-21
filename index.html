@@ -1,345 +1,384 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
-      crossorigin="anonymous"
-    />
-    <title>More Buttons!</title>
-    <style>
-      button {
-        width: 50px !important;
-        height: 50px !important;
-        text-align: center;
-      }
-      /* .dropdown-toggle.active-dropdown::after {
-        transform: rotate(-90deg);
-      } */
-    </style>
-  </head>
-  <body>
-    <div class="container-fluid text-center">
-      <!-- <button class='btn btn-dark'><i class='fa fa-gift'></i></button>
-    <button class='btn btn-dark'><i class='fa fa-smile-o'></i></button>
-    <div class="btn-group dropup">
-      <button type="button" class="btn btn-dark">
-        <i class='fa fa-paperclip'></i>
-      </button>
-      <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <div class="dropdown-menu">
-        <button class='btn btn-dark'><i class='fa fa-image'></i>Image</button>
-        <button class='btn btn-dark'><i class='fa fa-image fa-spin'></i>GIF</button>
-        <button class='btn btn-dark'><i class='fa fa-video'></i>Video</button>
-      </div>
-    </div>
-    <button class='btn btn-dark'><i class='fa fa-square-o'>/</i></button>
-    <input type=text placeholder='Type a message...' class='' />
-    <button class='btn btn-dark'><i class='fa fa-send'></i></button> -->
-      <form>
-        <div class="form-row float-left clearfix">
-          <div class="col-11">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Write a message..."
-            />
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-light">
-              <i class="fa fa-send"></i>
-            </button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">
-              <i class="fa fa-gift"></i>
-            </button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">
-              <i class="fa fa-smile-o"></i>
-            </button>
-          </div>
-          <!-- <div class="col">
-            <button type="button" class="btn btn-light">
-              <i class='fa fa-paperclip'></i>
-            </button>
-          </div> -->
-          <div class="btn-group dropdown">
-            <button type="button" class="btn btn-light">
-              <i class="fa fa-paperclip"></i>
-            </button>
-            <button
-              type="button"
-              class="btn btn-light dropdown-toggle dropdown-toggle-split"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <!-- <span class="sr-only">Toggle Dropdown</span> -->
-            </button>
-            <div class="dropdown-menu">
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-image"></i></button
-                >Static image
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-image fa-pulse"></i></button
-                >GIF
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-video"></i></button
-                >Record video...
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-microphone"></i></button
-                >Record audio...
-              </div>
-            </div>
-          </div>
-          <div class="btn-group dropdown">
-            <button
-              type="button"
-              class="btn btn-light dropdown-toggle dropdown-toggle-split"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <!-- <span class="sr-only">Toggle Dropdown</span> -->
-              <i class="fa fa-font"></i>
-            </button>
-            <div class="dropdown-menu">
-              <div>
-                <button class="btn btn-light"><i class="fa fa-bold"></i></button
-                ><strong>Bold</strong>
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-italic"></i></button
-                ><em>Italics</em>
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-underline"></i></button
-                ><ins>Underline</ins>
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-strikethrough"></i></button
-                ><del>Strikethrough</del>
-              </div>
-              <div>
-                <button class="btn btn-light"><i class="fa fa-code"></i></button
-                ><code>Monospace</code>
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-quote-left"></i></button
-                ><em>Quote</em>
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-list-ol"></i></button
-                >1. Ordered
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-list-ul"></i></button
-                >&middot; Unordered
-              </div>
-              <div>
-                <button class="btn btn-light">
-                  <i class="fa fa-chain"></i></button
-                ><a href='#'>Link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">
-              <!-- <i class="fa">/</i> -->
-              /
-            </button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">
-              <!-- <i class="fa">@</i> -->
-              @
-            </button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">
-              <!-- <i class="fa">#</i> -->
-              #
-            </button>
-          </div>
-          <div class="col">
-            <!-- <button type="button" class="btn btn-light">
-              .!-
-            </button> -->
-            
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-light"
-              data-toggle="modal"
-              data-target="#customCommands"
-            >
-              ,!-
-            </button>
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="customCommands"
-              tabindex="-1"
-              role="dialog"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">
-                      Custom Commands
-                    </h5>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                    >
-                      <span>&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    This server's bots which support custom commands are:
-                    <!-- Insert bots -->
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">MEE6</h5>
-                        <p class="card-text">
-                          Prefix: <code>!</code>
-                          Quick commands:
-                          <ul class="list-unstyled">
-                            <li>
-                              <a href='#'>!youtube &lt;search&gt;</a><br>
-                              Search in YouTube
-                            </li>
-                            <li>
-                              <a href="#">!start-quiz</a><br>
-                              Start a music quiz
-                            </li>
-                            <li>
-                              <a href="#">!record</a><br>
-                              Record your voice in a MP3 file
-                            </li>
-                            <li>
-                              <a href="#">!rank</a><br>
-                              See your rank
-                            </li>
-                          </ul>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">YAGPDB</h5>
-                        <p class="card-text">
-                          Prefix: <code>-</code>
-                          Quick commands:
-                          <ul class="list-unstyled">
-                            <li>
-                              <a href='#'>-ticket open &lt;reason&gt;</a><br>
-                              Open a ticket
-                            </li>
-                            <li>
-                              <a href="#">!start-quiz</a><br>
-                              Start a music quiz
-                            </li>
-                            <li>
-                              <a href="#">-help</a><br>
-                              See help
-                            </li>
-                          </ul>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>More Buttons!</title>
+	<style>
+		button {
+			width: 50px !important;
+			height: 50px !important;
+			text-align: center;
+		}
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script>
-      /*!
-       * Bootstrap 4 multi dropdown navbar ( https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-navbar/ )
-       * Copyright 2017.
-       * Licensed under the GPL license
-       */
+		#textarea {
+			width: calc(100% / 12 * 11) !important;
+			overflow-y: scroll;
+			overflow-x: scroll;
+			height: 100px !important;
+		}
 
-      $(document).ready(function () {
-        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
-          var $el = $(this);
-          $el.toggleClass("active-dropdown");
-          var $parent = $(this).offsetParent(".dropdown-menu");
-          if (!$(this).next().hasClass("show")) {
-            $(this)
-              .parents(".dropdown-menu")
-              .first()
-              .find(".show")
-              .removeClass("show");
-          }
-          var $subMenu = $(this).next(".dropdown-menu");
-          $subMenu.toggleClass("show");
+		/* .dropdown-toggle.active-dropdown::after {
+				transform: rotate(-90deg);
+			} */
+	</style>
+</head>
 
-          $(this).parent("li").toggleClass("show");
+<body>
+	<div class="container m-5 text-center">
+		<form>
+			<div class="form-row float-left clearfix">
+				<div class="col-11">
+					<div class='text-left border border-round border-secondary' id="textarea">
+						<span class="text-muted" id='wam'>Write a message...</span>
+					</div>
+				</div>
+				<div class="col-1">
+					<button type="button" class="btn btn-light">
+						<i class="material-icons">send</i>
+					</button>
+				</div>
+				<div class="col">
+					<div class="btn-group">
+						<button type="button" class="btn btn-light">
+							<i class="material-icons">card_giftcard</i>
+						</button>
+						<button type="button" class="btn btn-light">
+							<i class="material-icons">sentiment_satisfied_alt</i>
+						</button>
+						<div class="dropdown">
+							<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false">
+								<i class="material-icons">attach_file</i>
+							</button>
+							<div class="dropdown-menu">
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">image</i></button>
+									Static image
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">gif</i></button>
+									GIF
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">videocam</i></button>
+									Video
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">mic</i></button>
+									Audio
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">file_copy</i></button>File
+								</div>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false">
+								<i class="material-icons">text_format</i>
+							</button>
+							<div class="dropdown-menu">
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">format_bold</i>
+									</button><strong>Bold</strong>
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">format_italic</i>
+									</button><em>Italics</em>
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">format_underlined</i>
+									</button><ins>Underline</ins>
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">strikethrough_s</i>
+									</button><del>Strikethrough</del>
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">code</i>
+									</button><code>Monospace</code>
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">format_quote</i>
+									</button><em>Quote</em>
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">format_list_numbered</i>
+									</button>1. Ordered
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">format_list_bulleted</i>
+									</button>• Unordered
+								</div>
+								<div>
+									<button class="btn btn-light">
+										<i class="material-icons">link</i>
+									</button><a href='#'>Link</a>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#commands">
+							<i class='material-icons'>/</i>
+						</button>
+						<div class="modal fade" id="commands" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">
+											Commands
+										</h5>
+										<button type="button" class="close" data-dismiss="modal">
+											<span>&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ul>
+											<li>
+												<a href="#" onclick="command('unflip')">/unflip</a><br>
+												Appends a un-table-flip to your message.
+											</li>
+											<li>
+												<span class='text-muted'>/nick</span><br>
+												Change your name in this guild.
+												<strong>You don't have the permissions.</strong>
+											</li>
+											<li>
+												...
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="btn btn-light">
+							@
+						</button>
+						<button type="button" class="btn btn-light">
+							#
+						</button>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#customCommands">
+							,!-
+						</button>
 
-          $(this)
-            .parents("li.nav-item.dropdown.show")
-            .on("hidden.bs.dropdown", function (e) {
-              $(".dropdown-menu .show").removeClass("show");
-              $el.removeClass("active-dropdown");
-            });
+						<!-- Modal -->
+						<div class="modal fade" id="customCommands" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">
+											Custom Commands
+										</h5>
+										<button type="button" class="close" data-dismiss="modal">
+											<span>&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										This server's bots which support custom commands are:
+										<!-- Insert bots -->
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title">MEE6</h5>
+												<p class="card-text">
+													Prefix: <code>!</code>
+													Quick commands:
+													<ul class="list-unstyled">
+														<li>
+															<a href='#'>!youtube &lt;search&gt;</a><br>
+															Search in YouTube
+														</li>
+														<li>
+															<a href="#">!start-quiz</a><br>
+															Start a music quiz
+														</li>
+														<li>
+															<a href="#">!record</a><br>
+															Record your voice in a MP3 file
+														</li>
+														<li>
+															<a href="#">!rank</a><br>
+															See your rank
+														</li>
+													</ul>
+												</p>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title">YAGPDB</h5>
+												<p class="card-text">
+													Prefix: <code>-</code>
+													Quick commands:
+													<ul class="list-unstyled">
+														<li>
+															<a href='#'>-ticket open &lt;reason&gt;</a><br>
+															Open a ticket
+														</li>
+														<li>
+															<a href="#">!start-quiz</a><br>
+															Start a music quiz
+														</li>
+														<li>
+															<a href="#">-help</a><br>
+															See help
+														</li>
+													</ul>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
 
-          if (!$parent.parent().hasClass("navbar-nav")) {
-            $el
-              .next()
-              .css({ top: $el[0].offsetTop, left: $parent.outerWidth() - 4 });
-          }
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script>
+		let cache = []
+		document.onkeyup = ev => {
+			document.getElementById('wam').classList.add('d-none');
+			if (ev.key.length === 1) {
+				let s = document.createElement('span');
+				s.textContent = ev.key;
+				cache.push(s);
+				document.getElementById('textarea').appendChild(s);
+			} else if (ev.key === 'Enter') {
+				let b = document.createElement('br');
+				cache.push(b);
+				document.getElementById('textarea').appendChild(b);
+			} else if (ev.key === 'Backspace' && cache.length !== 0) {
+				document.getElementById('textarea').removeChild(cache.pop());
+				if (document.getElementById('textarea').childNodes.length === 3) {
+					document.getElementById('wam').classList.remove('d-none');
+				}
+			} else {
+				if (document.getElementById('textarea').childNodes.length === 3) {
+					document.getElementById('wam').classList.remove('d-none');
+				}
+			}
+			console.log(ev.key, ev.key.length);
+		}
 
-          return false;
-        });
-      });
-    </script> -->
-  </body>
+		/**
+		 * Simulate a key event.
+		 * @param {number} keyCode The keyCode of the key to simulate
+		 * @param {string} [type] The type of event : down, up or press. The default is up
+		 * @param {object} [modifiers] An object which contains modifiers keys { ctrlKey: true, altKey: false, ...}
+		 */
+		function simulateKey(keyCode, type, modifiers) {
+			//var evtName = (typeof (type) === "string") ? "key" + type : "keyup";
+			let modifier = (typeof (modifiers) === "object") ? modifier : {};
+
+			let up = document.createEvent("HTMLEvents");
+			up.initEvent('keyup', true, false);
+			up.keyCode = keyCode;
+			for (var i in modifiers) {
+				up[i] = modifiers[i];
+			}
+			document.dispatchEvent(up);
+
+			let down = document.createEvent("HTMLEvents");
+			down.initEvent('keydown', true, false);
+			down.keyCode = keyCode;
+			for (var i in modifiers) {
+				down[i] = modifiers[i];
+			}
+			document.dispatchEvent(down);
+
+			let press = document.createEvent("HTMLEvents");
+			press.initEvent('keypress', true, false);
+			press.keyCode = keyCode;
+			for (var i in modifiers) {
+				press[i] = modifiers[i];
+			}
+			document.dispatchEvent(press);
+		}
+
+		let maps = {
+			a: 65,
+			b: 66,
+			c: 67,
+			d: 68,
+			e: 69,
+			f: 70,
+			g: 71,
+			h: 72,
+			i: 73,
+			j: 74,
+			k: 75,
+			l: 76,
+			m: 77,
+			n: 78,
+			o: 79,
+			p: 80,
+			q: 81,
+			r: 82,
+			s: 83,
+			t: 84,
+			u: 85,
+			v: 86,
+			w: 87,
+			x: 88,
+			y: 89,
+			z: 90,
+			'0': 48,
+			'1': 49,
+			'2': 50,
+			'3': 51,
+			'4': 52,
+			'5': 53,
+			'6': 54,
+			'7': 55,
+			'8': 56,
+			'9': 57,
+			'/': 191,
+			'.': 190,
+			',': 188,
+			'!': 161,
+			'?': 193,
+			':': 58,
+			';': 186,
+			'\'': 222
+		}
+
+		function command(name) {
+			while (document.getElementById('textarea').childNodes.length !== 3) {
+				simulateKey(8)
+			}
+
+			for (l of "/" + name) {
+				simulateKey(maps[l]);
+			}
+		}
+	</script>
+</body>
+
 </html>
